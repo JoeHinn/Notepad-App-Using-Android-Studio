@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_page"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="401dp"
+        android:layout_height="489dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031">
+
+
+    </ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newnote"
+        android:layout_width="73dp"
+        android:layout_height="71dp"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:onClick="newnotebutton"
+        app:backgroundTint="#3C3F41"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969"
+        app:rippleColor="#2D2F31" />
+
+    <TextView
+        android:layout_width="89dp"
+        android:layout_height="95dp"
+        android:elevation="6dp"
+        android:text="  +"
+        android:textColor="#0CD3F7"
+        android:textColorHint="#0cd3f7"
+        android:textSize="60sp"
+        app:layout_anchor="@id/newnote"
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/newnote"
+        app:layout_constraintEnd_toEndOf="@+id/newnote"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="@+id/newnote"
+        app:layout_constraintTop_toTopOf="@+id/newnote"
+        app:layout_constraintVertical_bias="0.375" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
